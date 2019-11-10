@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav-bar {
+    background: teal;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+  
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+  }
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+   
+  }
+
+  ul li:hover {
+    background: violet;
+  }
+
+  ul li a {
+    color: wheat;
+    text-decoration: none;
+  }
+
+  .logo {
+    font-family: 'Allura', cursive;
+    font-size: 40px;
+    color: wheat;
+    float: left;
+    padding: 10px 20px;
+  }
+
+  .toggle-menu {
+    width: 100px;
+    padding: 10px 20px;
+    background: violet;
+    border: 1px solid black;
+    float: right;
+    display: none;
+  }
+
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+
+    background: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  @media (max-width: 320px) {
+    .logo {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 768px) {
+    .toggle-menu {
+      display: block;
+    }
+
+    ul {
+
+      width: 100%;
+      display: none;
+    }
+    ul li {
+      display: block;
+      text-align: center;
+    }
+    .active {
+      text-align: right;
+      display: block;
+    }
+  }
+
+  header {
+    padding: 12% 0;
+  }
+  
+  section {
+    min-height: 100px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  .menu {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  .jump-to-portfolio{
+    height: 80px;
+  }
+  
+  .white-space {
+    height: 100px;
+    background-color: white;
+  }
+  
+  .edit {
+    font-size: 10px;
+  }
